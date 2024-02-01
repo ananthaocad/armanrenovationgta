@@ -56,10 +56,10 @@ function HeroHome() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto px-5 text-center pb-2 md:pb-2">
             <h1 className="h1 mb-4 mt-6 " data-aos="fade-up">
-              Learn Like it's Magic
+            Crafting your Vision, Perfecting Spaces
             </h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
-            Discover Endless Possibilities with AI and Mixed Reality
+            No Sub Contractors – All In House Crew
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pb-1">
               <div data-aos="fade-up" data-aos-delay="400">
