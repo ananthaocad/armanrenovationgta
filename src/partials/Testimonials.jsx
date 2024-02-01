@@ -12,9 +12,9 @@ function Testimonials() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center py-12 md:py-20">
-            <h2 className="h2 opacity-20 mb-10 px-5">"We are not meant to sit on a chair and learn about the world, we are meant to explore the world itself."</h2>
-            <p className="text-xl text-gray-400"> - Bret Victor</p>
-          </div>
+            <h2 className="h2 opacity-20 mb-10 px-5">See what our customers are saying about us</h2>
+            {/*<p className="text-xl text-gray-400"> - Bret Victor</p>*/}
+          </div> 
 
           {/* Testimonials */}
           <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
@@ -27,9 +27,9 @@ function Testimonials() {
                
                         </div>
                 </div>
-                <blockquote className="text-lg text-gray-400 grow"> We're active beings in a 3D world, but modern education is passive and flat. CuriosityXR is active, 3D, and contextual learning, which is how the next generation will be educated.</blockquote>
+                <blockquote className="text-lg text-gray-400 grow"> Arman guys get the work done on time and in a professional manner. Did our legal basement. Absolutely love the work he has done. Highly recommend them!!</blockquote>
                 <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                  <cite className="text-gray-200 not-italic">Cayden Pierce</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">MIT Media Lab</a>
+                  <cite className="text-gray-200 not-italic">Tanveer</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Brampton</a>
                 </div>
               </div>
 
@@ -41,9 +41,9 @@ function Testimonials() {
                
                         </div>
                   </div>
-                  <blockquote className="text-lg text-gray-400 grow">CuriosityXR is as if you have a personal assistant right on your shoulder, seamlessly integrated into your surroundings, ever-ready to educate you on topics you're passionate about, based on your context. </blockquote>
+                  <blockquote className="text-lg text-gray-400 grow">Arman guys get the work done on time and in a professional manner. Did our legal basement. Absolutely love the work he has done. Highly recommend them!! </blockquote>
                   <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                    <cite className="text-gray-200 not-italic">Alexis Morris</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">OCAD University</a>
+                    <cite className="text-gray-200 not-italic">Virender</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Missisauga</a>
                   </div>
                 </div>
 
@@ -55,9 +55,9 @@ function Testimonials() {
               
                         </div>
                     </div>
-                    <blockquote className="text-lg text-gray-400 grow"> As a science teacher, CuriosityXR made my eyes light up! Teaching in 3D without having to leave the classroom would be game changing for my younger students!</blockquote>
+                    <blockquote className="text-lg text-gray-400 grow"> Arman guys get the work done on time and in a professional manner. Did our legal basement. Absolutely love the work he has done. Highly recommend them!! </blockquote>
                     <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                      <cite className="text-gray-200 not-italic">Jonathan Bloomfield</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Founder, Scooli</a>
+                      <cite className="text-gray-200 not-italic">Jonathan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Milton</a>
                     </div>
                   </div>
 
