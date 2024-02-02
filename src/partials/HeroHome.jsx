@@ -59,14 +59,14 @@ function HeroHome() {
 <div className="max-w-3xl mx-auto px-5 text-center pb-2 md:pb-2">
   <div className="flex flex-col md:flex-row items-center">
     {/* Left Section */}
-    <div className="md:w-1/2 md:text-left mb-6 md:mb-0">
-      <h2 className="h1 mb-4 mt-6 " data-aos="fade-up">
+    <div className="md:w-2/3 md:text-left mb-6 md:mb-0">
+      <h1 className="h1 mb-4 mt-6 " data-aos="fade-up">
         Crafting your Vision, Perfecting Spaces
-      </h2>
+      </h1>
     </div>
 
     {/* Right Section */}
-    <div className="md:w-1/2 md:text-left mb-6 md:mb-0">
+    <div className="md:w-1/3 md:text-left mb-6 md:mb-0">
       <p className="text-xl text-gray-400 mb-4" data-aos="fade-up" data-aos-delay="200">
         No Sub Contractors – All In House Crew
       </p>
