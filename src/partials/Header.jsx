@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Dropdown from '../utils/Dropdown';
+import LogoImage from '../images/logo.svg';
 
 function Header() {
 
@@ -40,11 +41,9 @@ function Header() {
           <div className="">
           {/* Logo */}
           <Link to="/" className="block" aria-label="Cruip">
-          <img src="../Images/logo.png" alt="Logo" />
+          <img src={LogoImage} alt="Logo" />
           </Link>
           </div>
-
-
           
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">

@@ -54,28 +54,41 @@ function HeroHome() {
             </Modal> */}
           </div>
           {/* Section header */}
-          <div className="max-w-3xl mx-auto px-5 text-center pb-2 md:pb-2">
-            <h1 className="h1 mb-4 mt-6 " data-aos="fade-up">
-            Crafting your Vision, Perfecting Spaces
-            </h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
-            No Sub Contractors – All In House Crew
-            <ul>
-              <li>Lowest Prices For Home Renovation!</li>
-              <li>Plywood Interiors</li>
-              <li>Solid Maple Doors & Dovetail Drawers</li>
-              <li>Free Custom Design & Lifetime Warranty</li>
-            </ul>
-            </p>
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pb-1">
-              <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-gray-200 hover:bg-gray-300 w-full mb-4 sm:w-auto sm:mb-0" target="_blank" rel="noopener noreferrer" href="/pages/Contact.jsx">
-                  Submit a query
-                </a>
-              </div>
-            
-            </div>
-          </div>
+         {/* Section header */}
+{/* Section header */}
+<div className="max-w-3xl mx-auto px-5 text-center pb-2 md:pb-2">
+  <div className="flex flex-col md:flex-row items-center">
+    {/* Left Section */}
+    <div className="md:w-1/2 md:text-left mb-6 md:mb-0">
+      <h2 className="h1 mb-4 mt-6 " data-aos="fade-up">
+        Crafting your Vision, Perfecting Spaces
+      </h2>
+    </div>
+
+    {/* Right Section */}
+    <div className="md:w-1/2 md:text-left mb-6 md:mb-0">
+      <p className="text-xl text-gray-400 mb-4" data-aos="fade-up" data-aos-delay="200">
+        No Sub Contractors – All In House Crew
+      </p>
+      <ul className="list-disc pl-4">
+        <li>Lowest Prices For Home Renovation!</li>
+        <li>Plywood Interiors</li>
+        <li>Solid Maple Doors & Dovetail Drawers</li>
+        <li>Free Custom Design & Lifetime Warranty</li>
+      </ul>
+    </div>
+  </div>
+
+  <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pb-1">
+    <div data-aos="fade-up" data-aos-delay="400">
+      <a className="btn text-white bg-gray-200 hover:bg-gray-300 w-full mb-4 sm:w-auto sm:mb-0" target="_blank" rel="noopener noreferrer" href="/pages/Contact.jsx">
+        Submit a query
+      </a>
+    </div>
+  </div>
+</div>
+
+
           {/*}
           <div className='max-w-3xl mx-auto place-content-center pb-1 md:pb-1 flex items-center'>
             <text className='text-sm pr-1.5 pb-0.5'>Available on </text>            
