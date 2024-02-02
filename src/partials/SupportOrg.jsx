@@ -1,6 +1,5 @@
 import React from 'react';
 import LogoImage2 from '../images/logo2.png';
-import LogoImage3 from '../images/logo3.png';
 
 function SupportOrg() {
   return (
@@ -18,7 +17,7 @@ function SupportOrg() {
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-blocks]">
-            <img src={LogoImage3} alt="Logo3" />
+            <img src={LogoImage2} alt="Logo2" />
             </div>
 
             {/* 3rd item */}
