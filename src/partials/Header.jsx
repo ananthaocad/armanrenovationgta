@@ -1,93 +1,51 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import Dropdown from '../utils/Dropdown';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import LogoImage from '../images/logo.svg';
 
 function Header() {
-
-  const [mobileNavOpen, setMobileNavOpen] = useState(false);
-
-  const trigger = useRef(null);
-  const mobileNav = useRef(null);
-
-  // close the mobile menu on click outside
-  useEffect(() => {
-    const clickHandler = ({ target }) => {
-      if (!mobileNav.current || !trigger.current) return;
-      if (!mobileNavOpen || mobileNav.current.contains(target) || trigger.current.contains(target)) return;
-      setMobileNavOpen(false);
-    };
-    document.addEventListener('click', clickHandler);
-    return () => document.removeEventListener('click', clickHandler);
-  });
-
-  // close the mobile menu if the esc key is pressed
-  useEffect(() => {
-    const keyHandler = ({ keyCode }) => {
-      if (!mobileNavOpen || keyCode !== 27) return;
-      setMobileNavOpen(false);
-    };
-    document.addEventListener('keydown', keyHandler);
-    return () => document.removeEventListener('keydown', keyHandler);
-  });
+  const handleScrollToContact = () => {
+    const newsletterSection = document.getElementById('Newsletter');
+    if (newsletterSection) {
+      newsletterSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
-    <header className="fixed w-full z-30 backdrop-blur h-16 ">
+    <header className="fixed w-full z-30 backdrop-blur h-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
 
           {/* Site branding */}
-         
-          <div className="">
-          {/* Logo */}
-          <Link to="/" className="block" aria-label="Cruip">
-          <img src={LogoImage} alt="Logo" />
-          </Link>
+          <div>
+            {/* Logo */}
+            <Link to="/" className="block" aria-label="Cruip">
+              <img src={LogoImage} alt="Logo" />
+            </Link>
           </div>
           
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
-
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
-              <li className='mx-6'>
-              <Link to="../Pages/Services" className="block" aria-label="Cruip"> Services
-              </Link>
+              <li className="text-black mr-4">
+                <FontAwesomeIcon icon={faPhone} className="mr-1" style={{ color: '#8B4513' }} />
+                {' '}
+                <span>(</span>
+                <span className="font-bold">705</span>
+                <span>)-</span>
+                <span className="font-bold">816</span>
+                <span>-</span>
+                <span className="font-bold">5675</span>
               </li>
-              <li>
-                <Link to="../Pages/Contact.jsx" className="justify-end btn text-white bg-gray-200 hover:bg-gray-300 w-full mb-4 sm:w-auto sm:mb-0" target="_blank" rel="noopener noreferrer"> Contact Us</Link>
+              <li className="text-black mr-4">
+                <FontAwesomeIcon icon={faEnvelope} className="mr-1" style={{ color: '#8B4513' }} />
+                {' '}
+                <button className="font-bold" onClick={handleScrollToContact}>armanrenovationgta@gmail.com</button>
               </li>
             </ul>
-
           </nav>
-
-          {/* Mobile menu */}
-          <div className="md:hidden">
-
-            {/* Hamburger button */}
-            {/* <button ref={trigger} className={`hamburger ${mobileNavOpen && 'active'}`} aria-controls="mobile-nav" aria-expanded={mobileNavOpen} onClick={() => setMobileNavOpen(!mobileNavOpen)}>
-              <span className="sr-only">Menu</span>
-              <svg className="w-6 h-6 fill-current text-gray-300 hover:text-gray-200 transition duration-150 ease-in-out" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <rect y="4" width="24" height="2" rx="1" />
-                <rect y="11" width="24" height="2" rx="1" />
-                <rect y="18" width="24" height="2" rx="1" />
-              </svg>
-            </button> */}
-
-            {/*Mobile navigation */}
-            {/* <nav id="mobile-nav" ref={mobileNav} className="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" style={mobileNavOpen ? { maxHeight: mobileNav.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: .8 } }>
-              <ul className="bg-gray-800 px-4 py-2">
-                <li>
-                  <Link to="/signin" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center">Sign in</Link>
-                </li>
-                <li>
-                  <Link to="/signup" className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out">Sign up</Link>
-                </li>
-              </ul>
-            </nav> */}
-
-          </div>
-
         </div>
       </div>
     </header>

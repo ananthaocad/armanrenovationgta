@@ -10,7 +10,7 @@ function SupportOrg() {
 
           {/* Section header */}
 
-      <p className='h4 text-center '>Supported by</p>
+      <p className='h2 text-center'>Supported by</p>
           {/* Items */}
           <div className="pt-20 max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-2 lg:gap-16 items-start md:max-w-2xl lg:max-w-none " data-aos-id-blocks>
 
